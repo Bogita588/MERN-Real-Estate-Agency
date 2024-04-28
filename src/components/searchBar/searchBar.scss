@@ -1,9 +1,7 @@
 @import "../../responsive.scss";
 
-.searchBar {
-  .type {
-
-
+.customSearchBar {
+  .customType {
     button {
       padding: 16px 36px;
       border: 1px solid #999;
@@ -13,7 +11,7 @@
       text-transform: capitalize;
 
       &.active {
-        background-color: black;
+        background-color: #ff0000; /* Change active background color to red */
         color: white;
       }
 
@@ -28,7 +26,7 @@
     }
   }
 
-  form {
+  .customForm {
     border: 1px solid #999;
     display: flex;
     justify-content: space-between;
@@ -75,8 +73,12 @@
     button {
       border: none;
       cursor: pointer;
-      background-color: #fece51;
+      background-color: #c9930c; 
       flex: 1;
+      
+      }
+      button:hover{
+        color: blue;
 
       @include sm{
         padding: 10px;

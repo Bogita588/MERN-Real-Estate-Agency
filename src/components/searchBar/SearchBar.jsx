@@ -16,8 +16,8 @@ function SearchBar() {
   };
 
   return (
-    <div className="searchBar">
-      <div className="type">
+    <div className="customSearchBar">
+      <div className="customType">
         {types.map((type) => (
           <button
             key={type}
@@ -28,7 +28,7 @@ function SearchBar() {
           </button>
         ))}
       </div>
-      <form>
+      <form className="customForm">
         <input type="text" name="location" placeholder="City Location" />
         <input
           type="number"
