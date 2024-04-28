@@ -1,24 +1,24 @@
-.filter {
+.customFilter {
   display: flex;
   flex-direction: column;
   gap: 10px;
 
-  h1 {
+  .customHeading {
     font-weight: 300;
     font-size: 24px;
   }
 
-  .item {
+  .customFormItem {
     display: flex;
     flex-direction: column;
     gap: 2px;
 
-    label {
+    .customLabel {
       font-size: 10px;
     }
 
-    input,
-    select {
+    .customInput,
+    .customSelect {
       width: 100px;
       padding: 10px;
       border: 1px solid #e0e0e0;
@@ -27,26 +27,27 @@
     }
   }
 
-  .top {
-    input {
+  .customTopSection {
+    .customInput {
       width: 100%;
     }
   }
 
-  .bottom {
+  .customBottomSection {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
 
-    button {
+    .customSearchButton {
       width: 100px;
-      padding: 10px;
+      padding: 6px;
       border: none;
       cursor: pointer;
       background-color: #fece51;
+      border-radius: 10px;
 
-      img {
+      .customSearchIcon {
         width: 24px;
         height: 24px;
       }
