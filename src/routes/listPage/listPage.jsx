@@ -4,22 +4,24 @@ import Filter from "../../components/filter/Filter"
 import Card from "../../components/card/Card"
 import Map from "../../components/map/Map";
 
-function ListPage() {
+function CustomListPage() {
   const data = listData;
 
-  return <div className="listPage">
-    <div className="listContainer">
-      <div className="wrapper">
-        <Filter/>
-        {data.map(item=>(
-          <Card key={item.id} item={item}/>
-        ))}
+  return (
+    <div className="customListPage">
+      <div className="customListContainer">
+        <div className="customWrapper">
+          <Filter />
+          {data.map((item) => (
+            <Card key={item.id} item={item} />
+          ))}
+        </div>
+      </div>
+      <div className="customMapContainer">
+        <Map items={data} />
       </div>
     </div>
-    <div className="mapContainer">
-      <Map items={data}/>
-    </div>
-  </div>;
+  );
 }
 
-export default ListPage;
+export default CustomListPage;
