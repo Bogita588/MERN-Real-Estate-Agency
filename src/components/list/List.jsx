@@ -4,7 +4,7 @@ import {listData} from"../../lib/dummydata"
 
 function List(){
   return (
-    <div className='list'>
+    <div className='itemList'>
       {listData.map(item=>(
         <Card key={item.id} item={item}/>
       ))}
